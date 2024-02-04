@@ -1,0 +1,182 @@
+@font-face {
+    font-family: Agbalumo;
+    src: url(./fonts/Agbalumo-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #CCC5B9;
+    min-height: 100vh;
+}
+
+header h1 {
+    color: #CCC5B9;
+    font-family: Agbalumo;
+    text-align: center;
+    padding-top: 10px;
+}
+
+header {
+    text-align: center;
+    background-color: #252422;
+}
+
+.burger {
+    display: none;
+}
+
+.nav-links {
+    color: #EB5E28;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.nav-links:not(:last-child) {
+    margin-right: 30px;
+}
+
+aside {
+    padding-left: 35px;
+    background-color: #FFFCF2;
+    height: 63vh;
+    margin: 20px;
+    padding-right: 35px;
+}
+
+.center-menu {
+    text-align: center;
+    background-color: #FFFCF2;
+    margin: 20px 0 20px 20px;
+    width: 90%;
+    height: 60vh;
+    padding: 20px;
+}
+
+.sec {
+    display: flex;
+    align-items: center;
+}
+
+h2, h4, h3, caption {
+    font-family: Agbalumo;
+    color: #EB5E28;
+}
+
+h2 {
+    animation: slide-in 0.7s both;
+}
+
+@keyframes slide-in {
+    0% {
+      transform: translateY(-1000px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+h4 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.text {
+    font-family: Agbalumo;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.list {
+    margin-top: 15px;
+}
+
+span {
+    margin-left: 15px;
+}
+
+table {
+    width: 100%;
+    margin-top: 50px;
+}
+
+tr, td, table {
+    border: 1px black solid;
+}
+
+.start {
+    background-color: rgb(53, 132, 158);
+    color: white;
+    font-family: Agbalumo;
+}
+
+caption {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+aside li::marker {
+    content: "\269D";
+}
+
+@media screen and (max-width:1024px) {
+   
+    h1 {
+        font-size: 25px;
+    }
+    
+    .header-img {
+        width: 959px;
+        height: 150px;
+    }   
+
+    .nav-links {
+        font-size: 25px;
+    }
+
+    h2, h4, h3, caption {
+        font-size: 20px;;
+    }
+
+    .text {
+        font-size: 11px;
+    }
+
+    .hobbies {
+        font-size: 10px;
+    }
+
+    .center-menu {
+        margin: 20px 0 10px 0px;
+        width: 75%;
+    }
+
+    aside {
+        margin: 20px 0 13px 5px;
+        padding-right: 15px;
+        height: 65vh;
+        padding-left: 25px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .header-img {
+        width: 600px;
+        height: 100px;
+    }  
+
+    .burger {
+        display: inline;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    h2 {
+        animation: none;
+    }
+}
